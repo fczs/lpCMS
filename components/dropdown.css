@@ -1,0 +1,71 @@
+div.hover-border { box-shadow: 0px 0px 5px #000000; }
+
+div.dropdown-form {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    background: rgb(229, 241, 230);
+    box-shadow: 5px 5px 5px #888888;
+    border: solid 1px black;
+    opacity: 0.3;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+div.dropdown-form:hover,
+div.dropdown-form.fix,
+div:hover > div.dropdown-form
+{
+    z-index: 200;
+    opacity: 1;
+}
+
+div.dropdown-form:hover > .desc,
+div.dropdown-form.fix > .desc,
+div:hover > div.dropdown-form > .desc,
+div.dropdown-form:hover > .form,
+div.dropdown-form.fix > .form,
+div:hover > div.dropdown-form > .form
+{
+    display: inline-block;
+}
+
+
+div.dropdown-form .pencil {
+    background: url(/images/pencil3.png) no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+div.dropdown-form:hover > .pencil,
+div.dropdown-form.fix > .pencil,
+div:hover > div.dropdown-form > .pencil
+ {
+    background: url(/images/pencil2.png) no-repeat;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+div.dropdown-form .desc {
+    display: none;
+    vertical-align: middle;
+    margin: 5px 10px;
+    max-width: 150px;
+    overflow: hidden;
+    min-height: 20px;
+}
+
+div.dropdown-form .form {
+    display: none;
+    padding: 20px;
+}

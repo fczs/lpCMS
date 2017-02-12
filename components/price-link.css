@@ -1,0 +1,17 @@
+form.price-link {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+form.price-link input[type=file] {
+    font-size: 50em;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    padding: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 500;
+}
+

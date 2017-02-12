@@ -1,0 +1,85 @@
+
+div.fontawesome-field {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    background: rgb(229, 241, 230);
+    box-shadow: 5px 5px 5px #888888;
+    border: solid 1px black;
+    opacity: 0.3;
+    z-index: 10;
+}
+
+div.fontawesome-field:hover,
+div:hover > div.fontawesome-field
+{
+    z-index: 20;
+    opacity: 1;
+}
+
+div.fontawesome-field:hover > .desc,
+div:hover > div.fontawesome-field > .desc
+{
+    display: inline-block;
+}
+
+
+div.fontawesome-field .pencil {
+    background: url(../images/pencil3.png) no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+div.fontawesome-field:hover > .pencil,
+div:hover > div.fontawesome-field > .pencil
+ {
+    background: url(../images/pencil2.png) no-repeat;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+div.fontawesome-field .desc {
+    display: none;
+    vertical-align: middle;
+    padding: 5px 10px;
+    max-width: 100px;
+    overflow: hidden;
+    min-height: 20px;
+/*    min-width: 100px; */
+    font-weight: normal;
+    text-transform: none;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.ui-dialog-title { font-size: 12px; }
+
+div#fontawesome-footer-dialog textarea { width: 100%; height: 100%; paddig: 5px; }
+div#fontawesome-footer-dialog form { width: 100%; height: 100%; paddig: 0; }
+div#fontawesome-footer-dialog { text-align: center; display: none; }
+div#fontawesome-footer-dialog i.fa {
+    font-size: 40px;
+    width: 50px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+div#fontawesome-footer-dialog i.fa.active {
+    color: #f88;
+}
+
+div#fontawesome-footer-dialog i.fa:hover {
+    color: #f00;
+}
+
+

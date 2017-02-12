@@ -1,0 +1,68 @@
+div.img-hover-border { box-shadow: 0px 0px 5px #000000; }
+
+div.img-edit {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    background: rgb(229, 241, 230);
+    box-shadow: 5px 5px 5px #888888;
+    border: solid 1px black;
+    opacity: 0.3;
+    z-index: 50;
+}
+
+div.img-edit:hover,
+div:hover > div.img-edit
+{
+    z-index: 60;
+    opacity: 1;
+}
+
+div.img-edit:hover > .desc,
+div:hover > div.img-edit > .desc
+{
+    display: inline-block;
+}
+
+
+div.img-edit .pencil {
+    background: url(/images/pencil3.png) no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+div.img-edit:hover > .pencil,
+div:hover > div.img-edit > .pencil
+ {
+    background: url(/images/pencil2.png) no-repeat;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+div.img-edit .desc {
+    display: none;
+    vertical-align: middle;
+    padding: 5px 10px;
+    max-width: 100px;
+    overflow: hidden;
+    min-height: 20px;
+    min-width: 30px;
+}
+
+.ui-dialog-title { font-size: 12px; }
+
+div#img-edit-footer-dialog { display: none; }
+
+div#img-edit-footer-dialog .ajax-content { width: 100%; height: 100%; paddig: 5px; }
+div#img-edit-footer-dialog .ajax-content img.selector { cursor: pointer; padding: 10px; }
+div#img-edit-footer-dialog .ajax-content img.selector:hover { box-shadow: 0px 0px 1px black; }

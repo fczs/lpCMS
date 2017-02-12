@@ -1,0 +1,68 @@
+div.hover-border { box-shadow: 0px 0px 5px #000000; }
+
+div.carousel-slide-num {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    background: rgb(229, 241, 230);
+    box-shadow: 5px 5px 5px #888888;
+    border: solid 1px black;
+    opacity: 0.3;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+div.carousel-slide-num:hover,
+div:hover > div.carousel-slide-num
+{
+    z-index: 20;
+    opacity: 1;
+}
+
+div.carousel-slide-num:hover > .desc,
+div:hover > div.carousel-slide-num > .desc,
+div.carousel-slide-num:hover > .form,
+div:hover > div.carousel-slide-num > .form
+{
+    display: inline-block;
+}
+
+
+div.carousel-slide-num .pencil {
+    background: url(/images/pencil3.png) no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+div.carousel-slide-num:hover > .pencil,
+div:hover > div.carousel-slide-num > .pencil
+ {
+    background: url(/images/pencil2.png) no-repeat;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+div.carousel-slide-num .desc {
+    display: none;
+    vertical-align: middle;
+    padding: 5px 10px;
+    max-width: 150px;
+    overflow: hidden;
+    min-height: 20px;
+    min-width: 50px;
+}
+
+div.carousel-slide-num .form {
+    display: none;
+    padding: 20px;
+}

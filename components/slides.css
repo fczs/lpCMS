@@ -1,0 +1,7 @@
+div#slides {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+div#slides div.slide { display: inline-block; }

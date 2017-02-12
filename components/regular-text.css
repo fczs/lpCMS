@@ -1,0 +1,73 @@
+div.text-hover-border { box-shadow: 0px 0px 5px #000000; }
+
+div.regular-text-field {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    background: rgb(229, 241, 230);
+    box-shadow: 5px 5px 5px #888888;
+    border: solid 1px black;
+    opacity: 0.3;
+    z-index: 10;
+}
+
+div.regular-text-field:hover,
+div:hover > div.regular-text-field
+{
+    z-index: 20;
+    opacity: 1;
+}
+
+div.regular-text-field:hover > .desc,
+div:hover > div.regular-text-field > .desc
+{
+    display: inline-block;
+}
+
+
+div.regular-text-field .pencil {
+    background: url(/images/pencil3.png) no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+div.regular-text-field:hover > .pencil,
+div:hover > div.regular-text-field > .pencil
+ {
+    background: url(/images/pencil2.png) no-repeat;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+div.regular-text-field .desc {
+    display: none;
+    vertical-align: middle;
+    padding: 5px 10px;
+    max-width: 100px;
+    overflow: hidden;
+    min-height: 20px;
+/*    min-width: 100px; */
+    font-weight: normal;
+    text-transform: none;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.ui-dialog-title { font-size: 12px; }
+
+div#regular-text-footer-dialog {
+    display: none;
+}
+
+div#regular-text-footer-dialog textarea { width: 100%; height: 100%; paddig: 5px; }
+div#regular-text-footer-dialog form { width: 100%; height: 100%; paddig: 0; }

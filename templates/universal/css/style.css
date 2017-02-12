@@ -1,0 +1,22 @@
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active,
+a,
+button,
+input,
+a:active,
+button:active,
+input:active,
+a:focus,
+button:focus,
+input:focus,
+a:hover,
+button:hover,
+input:hover {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+}

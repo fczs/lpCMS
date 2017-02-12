@@ -1,0 +1,9 @@
+.note-above {
+    position: absolute;
+    z-index: 1;
+    padding: 0px 35px;
+    margin-top: -40px;
+    background: url(/images/down_arrow.png) no-repeat;
+    line-height: 30px;
+    opacity: 0.3;
+}
